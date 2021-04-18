@@ -3,9 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'https://api.edamam.com/api',
+  app_id: '47379841',
+  app_key: 'd28718060b8adfd39783ead254df7f92'
 };
 
+
+// app_id=47379841&app_key=d28718060b8adfd39783ead254df7f92
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

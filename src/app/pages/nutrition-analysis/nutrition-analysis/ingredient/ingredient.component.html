@@ -1,0 +1,25 @@
+
+<section>
+  <div class="container" >
+    <div class="row d-flex justify-content-center" >
+      <h1>Nutrition Analysis</h1>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="container" >
+    <div class="row d-flex justify-content-center" >
+      <textarea [(ngModel)]="ingridient" >
+
+      </textarea>
+    </div>
+    <br>
+    <div class="col-md-12 d-flex justify-content-center" >
+      <button class="btn btn-info" [disabled]="!ingridient" (click)="analyze()" >Analize</button>
+    </div>
+
+  </div>
+</section>
