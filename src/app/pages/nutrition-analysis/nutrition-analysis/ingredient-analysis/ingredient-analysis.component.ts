@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FacadeService } from 'src/app/services/facade/facade.service';
-import { SharingDataService } from 'src/app/services/sharindData/sharing-data.service';
 
 @Component({
   selector: 'app-ingredient-analysis',
@@ -18,7 +17,7 @@ export class IngredientAnalysisComponent implements OnInit {
   }
 
   getAnalysisData() {
-    this.fcaade.getStateAnalysis().subscribe(data => {
+    this.fcaade.getStateAnalysis().subscribe((data: any) => {
       this.ingredientsData = data;
       console.log('data', data);
     })

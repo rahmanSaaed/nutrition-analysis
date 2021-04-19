@@ -6,6 +6,7 @@ import { IngredientComponent } from './ingredient/ingredient.component';
 import { IngredientAnalysisComponent } from './ingredient-analysis/ingredient-analysis.component';
 import { FacadeModule } from 'src/app/services/facade/facade.module';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared-module/shared.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     NutritionAnalysisRoutingModule,
     FacadeModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ]
 })
 export class NutritionAnalysisModule { }

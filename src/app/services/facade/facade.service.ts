@@ -1,6 +1,6 @@
 import { Injectable, Injector } from '@angular/core';
 import { IngredientService } from '../ingredient/ingredient.service';
-import { SharingDataService } from '../sharindData/sharing-data.service';
+import { SharingDataService } from '../sharing-data/sharing-data.service';
 
 @Injectable({
   providedIn: 'root'
