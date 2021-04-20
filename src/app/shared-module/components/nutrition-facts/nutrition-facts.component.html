@@ -1,14 +1,95 @@
-<div class="row">
-  <h2>Toatal Calories</h2>
-  <div class="d-flex justify-content-between bg-secondary mb-3">
-    <div class="p-2 bg-info">Flex item 1</div>
-    <div class="p-2 bg-warning">Flex item 2</div>
-    <div class="p-2 bg-primary">Flex item 3</div>
-  </div>
-</div>
 
-<section>
-  <div class="container" >
 
-  </div>
-</section>
+<table class="printTable">
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1"  colspan=2>Calories</td>
+    <td class="sectionTd col4"  colspan=2></td>
+    <td class="sectionTd col4"  colspan=2>{{ingredients?.calories}}</td>
+
+  </tr>
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1"  colspan=2>{{ingredients?.totalNutrients?.FAT?.label}} {{ingredients?.totalNutrients?.FAT?.quantity}} {{ingredients?.totalNutrients?.FAT?.unit}}</td>
+    <td class="sectionTd col4"  colspan=2></td>
+    <td class="sectionTd col4"  colspan=2>{{ingredients?.totalDaily?.FAT?.quantity}} {{ingredients?.totalDaily?.FAT?.unit}}</td>
+
+  </tr>
+
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.FASAT?.label}} {{ingredients?.totalNutrients?.FASAT?.quantity}} {{ingredients?.totalNutrients?.FASAT?.unit}}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2"> {{ingredients?.totalDaily?.FASAT?.quantity}} {{ingredients?.totalDaily?.FASAT?.unit}}</td>
+  </tr>
+
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1" colspan=2>{{ingredients?.totalNutrients?.CHOLE?.label}} {{ingredients?.totalNutrients?.CHOLE?.quantity}} {{ingredients?.totalNutrients?.CHOLE?.unit}}</td>
+    <td class="sectionTd col4" colspan=2></td>
+    <td class="sectionTd col4" colspan=2>{{ingredients?.totalDaily?.CHOLE?.quantity}} {{ingredients?.totalDaily?.CHOLE?.unit}}</td>
+
+  </tr>
+
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1" colspan=2>{{ingredients?.totalNutrients?.NA?.label }} {{ingredients?.totalNutrients?.NA?.quantity }} {{ingredients?.totalNutrients?.NA?.unit }} </td>
+    <td class="sectionTd col4" colspan=2></td> 
+    <td class="sectionTd col4" colspan=2>{{ingredients?.totalDaily?.NA?.quantity}} {{ingredients?.totalDaily?.NA?.unit}}</td>
+  </tr>
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1" colspan=2>{{ingredients?.totalNutrients?.CHOCDF?.label}} {{ingredients?.totalNutrients?.CHOCDF?.quantity}} {{ingredients?.totalNutrients?.CHOCDF?.unit}}</td>
+    <td class="sectionTd col4" colspan=2></td>
+    <td class="sectionTd col4" colspan=2>{{ingredients?.totalDaily?.CHOCDF?.quantity}} {{ingredients?.totalDaily?.CHOCDF?.unit}}</td>
+  </tr>
+
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.FIBTG?.label }} {{ingredients?.totalNutrients?.FIBTG?.quantity }} {{ingredients?.totalNutrients?.FIBTG?.unit }}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2">{{ingredients?.totalDaily?.FIBTG?.quantity }} {{ingredients?.totalDaily?.FIBTG?.unit }}</td>
+  </tr>
+
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.SUGAR?.label }} {{ingredients?.totalNutrients?.SUGAR?.quantity }} {{ingredients?.totalNutrients?.SUGAR?.unit }}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2"></td>
+  </tr>
+
+
+  <tr class="sectionTr">
+    <td class="sectionTd col1" colspan=2>{{ingredients?.totalNutrients?.PROCNT?.label }} {{ingredients?.totalNutrients?.PROCNT?.quantity }} {{ingredients?.totalNutrients?.PROCNT?.unit }}</td>
+    <td class="sectionTd col4" colspan=2></td>
+    <td class="sectionTd col4" colspan=2>{{ingredients?.totalDaily?.PROCNT?.quantity }} {{ingredients?.totalDaily?.PROCNT?.unit }}</td>
+  </tr>
+
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.VITD?.label }} {{ingredients?.totalNutrients?.VITD?.quantity }} {{ingredients?.totalNutrients?.VITD?.unit }}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2">{{ingredients?.totalDaily?.VITD?.quantity}} {{ingredients?.totalDaily?.VITD?.unit}}</td>
+  </tr>
+
+  
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.CA?.label}} {{ingredients?.totalNutrients?.CA?.quantity}} {{ingredients?.totalNutrients?.CA?.unit}}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2">{{ingredients?.totalDaily?.CA?.quantity}} {{ingredients?.totalDaily?.CA?.unit}}</td>
+  </tr>
+
+  
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.FE?.label}} {{ingredients?.totalNutrients?.FE?.quantity}} {{ingredients?.totalNutrients?.FE?.unit}}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2"> {{ingredients?.totalDaily?.FE?.quantity}} {{ingredients?.totalDaily?.FE?.unit}}</td>
+  </tr>
+
+  <tr>
+    <td class="col1" colspan="2">{{ingredients?.totalNutrients?.K?.label }} {{ingredients?.totalNutrients?.K?.quantity }} {{ingredients?.totalNutrients?.K?.unit }}</td>
+    <td class="col2" colspan="2"></td>
+    <td class="col4" colspan="2">{{ingredients?.totalDaily?.K?.quantity}} {{ingredients?.totalDaily?.K?.unit}}</td>
+  </tr>
+
+
+
+</table>
+
+
