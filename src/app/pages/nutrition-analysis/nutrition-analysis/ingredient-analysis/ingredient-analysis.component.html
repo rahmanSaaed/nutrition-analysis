@@ -4,14 +4,16 @@
   <div class="container sammary" >
     <div class="row" >
 
-      <app-ingredients-list [ingredients]="ingredientsData?.ingredients" ></app-ingredients-list>
-
-      <div class="col-md-12 text-center " >
-        <br>
-        <button class="btn btn-info" >total nutrition</button>
-      </div>
-      <br>
       <div class="col-md-12 ">
+        <app-ingredients-list [ingredients]="ingredientsData?.ingredients" ></app-ingredients-list>
+      </div>
+
+      <div class="col-md-12 text-center btn-totl-nutrition" >
+        <button class="btn btn-info" (click)="showTnutrition()" >total nutrition</button>
+      </div>
+
+
+      <div class="col-md-12 " [hidden]="!showBtn"  >
         <app-nutrition-facts   [ingredients]="ingredientsData"></app-nutrition-facts>
       </div>
 

@@ -9,6 +9,7 @@ import { FacadeService } from 'src/app/services/facade/facade.service';
 export class IngredientAnalysisComponent implements OnInit {
   analysisData: any;
   ingredientsData: any;
+  showBtn: boolean = false;
 
   constructor(private fcaade: FacadeService) { }
 
@@ -21,6 +22,10 @@ export class IngredientAnalysisComponent implements OnInit {
       this.ingredientsData = data;
       console.log('data', data);
     })
+  }
+
+  showTnutrition() {
+    this.showBtn = !this.showBtn;
   }
 
 }
