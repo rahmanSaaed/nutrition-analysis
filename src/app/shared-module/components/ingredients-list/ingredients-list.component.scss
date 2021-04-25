@@ -10,6 +10,12 @@ td, th {
   padding: 3px;
 }
 
-// tr:nth-child(even) {
-//   background-color: #dddddd;
-// }
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.warning-invalid{
+  text-align: center;
+  color: rgb(212, 54, 54);
+}

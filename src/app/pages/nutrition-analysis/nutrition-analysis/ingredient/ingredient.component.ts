@@ -9,6 +9,7 @@ import { FacadeService } from 'src/app/services/facade/facade.service';
 })
 export class IngredientComponent implements OnInit {
   ingridient: string = '';
+  isAnalyzing: boolean = false;
 
   constructor(
     private facadeService: FacadeService,
@@ -21,15 +22,15 @@ export class IngredientComponent implements OnInit {
 
 
   analyze() {
-    console.log('data', this.ingridient.split("\n"));
+    this.isAnalyzing = true;
     this.facadeService.getOrderList({ingr: this.ingridient.split("\n")}).subscribe(res => {
-      console.log('res', res);
       if (res) {
+        this.isAnalyzing = false;
         this.facadeService.setStateAnalysis(res);
         this.router.navigate(['ingredient-analysis']);
-
       }
-
+    }, error => {
+      this.isAnalyzing = false;
     });
   }
 

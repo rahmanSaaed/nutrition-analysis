@@ -1,20 +1,25 @@
-
-
 <section>
-  <div class="container sammary" >
-    <div class="row" >
+
+  <div class="col-md-12 text-center ">
+    <h2>total nutrition facts in daily basis</h2>
+  </div>
+
+  <div class="container sammary">
+    <div class="row">
+
+
 
       <div class="col-md-12 ">
-        <app-ingredients-list [ingredients]="ingredientsData?.ingredients" ></app-ingredients-list>
+        <app-ingredients-list [ingredients]="ingredientsData?.ingredients"></app-ingredients-list>
       </div>
 
-      <div class="col-md-12 text-center btn-totl-nutrition" >
-        <button class="btn btn-info" (click)="showTnutrition()" >total nutrition</button>
+      <div class="col-md-12 text-center btn-totl-nutrition">
+        <button class="btn btn-info" (click)="showTnutrition()">total nutrition</button>
       </div>
 
 
-      <div class="col-md-12 " [hidden]="!showBtn"  >
-        <app-nutrition-facts   [ingredients]="ingredientsData"></app-nutrition-facts>
+      <div class="col-md-12 " [hidden]="!showBtn">
+        <app-nutrition-facts [ingredients]="ingredientsData"></app-nutrition-facts>
       </div>
 
     </div>
